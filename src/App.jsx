@@ -1,8 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 
 import Dashboard from './pages/Dashboard';
+import InputData from './pages/InputDataPage';
+import Hasil from './pages/HasilPage';
+import Analisa from './pages/AnalisaPage';
 
 function App() {
   return (
@@ -10,7 +13,10 @@ function App() {
         <div className='App'>
           <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path='/dashboard' element={<Dashboard/>}/>
+            <Route path='/' element={<Dashboard/>}/>
+            <Route path='/inputdata' element={<InputData/>}/>
+            <Route path='/hasil' element={<Hasil/>}/>
+            <Route path='/analisa' element={<Analisa/>}/>
           </Routes>
         </Suspense>
         </div>
