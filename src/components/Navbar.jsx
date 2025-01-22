@@ -13,10 +13,6 @@ const Navbar = () => {
             className="p-2 hover:bg-gray-700 rounded-md font-medium"
           > Input Data</a>
           <a
-            href="/analisa"
-            className="p-2 hover:bg-gray-700 rounded-md font-medium"
-          > Analisa</a>
-          <a
             href="/hasil"
             className="p-2 hover:bg-gray-700 rounded-md font-medium"
           > Hasil</a>
